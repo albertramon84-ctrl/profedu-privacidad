@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminar mi cuenta — ProfEdu</title>
+<style>
+  :root {
+    --azul: #003366;
+    --azul-claro: #EFF6FF;
+    --verde: #16A34A;
+    --verde-claro: #F0FDF4;
+    --borde: #E5E7EB;
+    --texto: #374151;
+    --gris: #6B7280;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #F2F4F7;
+    color: var(--texto);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--azul);
+    color: #fff;
+    padding: 40px 20px 32px;
+    text-align: center;
+  }
+  header h1 { margin: 12px 0 4px; font-size: 24px; }
+  header p { margin: 2px 0; opacity: 0.75; font-size: 14px; }
+  main {
+    max-width: 640px;
+    margin: -20px auto 40px;
+    padding: 0 16px;
+  }
+  section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 4px rgba(0,51,102,0.06);
+  }
+  section h2 {
+    color: var(--azul);
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  section p { font-size: 14px; margin: 0 0 10px; }
+  section p:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 10px; padding-left: 20px; }
+  ul:last-child { margin-bottom: 0; }
+  li { font-size: 14px; margin-bottom: 6px; }
+  a { color: #2563EB; }
+
+  .opcion {
+    border: 1.5px solid var(--borde);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .opcion h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: var(--azul);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: var(--azul);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .boton {
+    display: inline-block;
+    background: var(--azul);
+    color: #fff !important;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  .retiene {
+    background: var(--verde-claro);
+    border: 1px solid #BBF7D0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: #166534;
+  }
+  .elimina {
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: #991B1B;
+    margin-bottom: 10px;
+  }
+
+  .contacto {
+    background: var(--azul-claro);
+    border: 1px solid #BFDBFE;
+    border-radius: 12px;
+    padding: 18px 20px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .contacto strong { display: block; color: var(--azul); margin-bottom: 6px; font-size: 14px; }
+  .contacto a { font-size: 15px; text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--gris);
+    padding: 20px;
+  }
+  footer a { color: var(--gris); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Eliminar mi cuenta</h1>
+  <p>ProfEdu — Aplicación para Docentes</p>
+</header>
+
+<main>
+
+  <section>
+    <p>Podés solicitar la eliminación de tu cuenta de ProfEdu y de tus datos personales en cualquier momento, tengas o no la aplicación instalada. Elegí la opción que te resulte más cómoda.</p>
+  </section>
+
+  <section>
+    <div class="opcion">
+      <h3><span class="badge">1</span> Desde la aplicación</h3>
+      <p>Abrí ProfEdu, andá a <strong>Perfil → Eliminar cuenta</strong> y confirmá la acción. Tu cuenta se elimina de inmediato.</p>
+    </div>
+
+    <div class="opcion">
+      <h3><span class="badge">2</span> Sin la aplicación instalada</h3>
+      <p>Enviá un correo a <strong>profeduapp@gmail.com</strong> con el asunto <em>"Eliminar mi cuenta"</em>, indicando el correo electrónico con el que te registraste en ProfEdu. Procesamos la solicitud en un plazo de hasta 30 días y te confirmamos por el mismo medio cuando esté completa.</p>
+      <a class="boton" href="mailto:profeduapp@gmail.com?subject=Eliminar%20mi%20cuenta&body=Correo%20registrado%20en%20ProfEdu%3A%20">Solicitar eliminación por correo</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Qué se elimina</h2>
+    <div class="elimina">
+      Tu cuenta, correo electrónico, nombre, institución educativa, estado de plan (gratuito o Premium) y todos los contadores de uso asociados a tu cuenta se eliminan de forma permanente de nuestra base de datos.
+    </div>
+
+    <h2>Qué no se elimina, y por qué</h2>
+    <div class="retiene">
+      <ul>
+        <li><strong>Datos guardados en tu dispositivo</strong> — la lista de asistencia, cotejo y valoración de tus alumnos vive únicamente en tu celular y nunca llegó a nuestro servidor. Se elimina al desinstalar la app.</li>
+        <li><strong>Materiales informativos del caché compartido</strong> — el contenido de apoyo teórico generado para temas específicos se guarda de forma anónima, sin ningún vínculo con tu cuenta, para que otros docentes lo reutilicen. Al no contener datos personales tuyos, no forma parte de la información que se elimina.</li>
+        <li><strong>Registros de tu suscripción con Google Play</strong> — si tuviste una suscripción Premium, los registros de esa transacción los conserva Google conforme a su propia política, independientemente de la eliminación de tu cuenta en ProfEdu.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="contacto">
+    <strong>¿Tenés dudas sobre este proceso?</strong>
+    <a href="mailto:profeduapp@gmail.com">profeduapp@gmail.com</a>
+  </div>
+
+</main>
+
+<footer>
+  ProfEdu © 2026 · <a href="privacidad.html">Política de Privacidad</a>
+</footer>
+
+</body>
+</html>
