@@ -85,7 +85,7 @@
 <header>
   <h1>Política de Privacidad</h1>
   <p>ProfEdu — Aplicación para Docentes</p>
-  <p class="fecha">Última actualización: 4 de agosto de 2026</p>
+  <p class="fecha">Última actualización: 5 de octubre de 2026</p>
 </header>
 
 <main>
@@ -101,6 +101,7 @@
     <ul>
       <li>Correo electrónico (para crear tu cuenta y recuperar tu contraseña)</li>
       <li>Nombre del docente e institución educativa (ingresados voluntariamente por vos)</li>
+      <li>Datos del aula que cargás en la app: tus cursos, los nombres de tus alumnos, la asistencia, la lista de cotejo y los puntajes de la planilla de proceso</li>
       <li>Datos de uso: cantidad de planes, materiales, evaluaciones, proyectos y documentos generados</li>
       <li>Información del plan activo (gratuito o Premium) y fecha de activación</li>
       <li>Si te suscribís a Premium, el estado de tu suscripción según lo informa Google Play (ProfEdu no recibe ni almacena los datos de tu tarjeta)</li>
@@ -113,6 +114,7 @@
     <ul>
       <li>Autenticar tu cuenta y mantener tu sesión activa</li>
       <li>Enviar al servidor los datos necesarios para generar contenido con inteligencia artificial</li>
+      <li>Sincronizar tus cursos, alumnos, asistencia, cotejo y valoración entre tus dispositivos (por ejemplo, el celular y la computadora), para que veas los mismos datos en todos</li>
       <li>Controlar los límites de uso según tu plan (gratuito o Premium)</li>
       <li>Recuperar tu contraseña mediante un código enviado a tu correo</li>
       <li>Validar tu suscripción Premium contra Google Play</li>
@@ -126,11 +128,22 @@
     <ul>
       <li>Las contraseñas se almacenan encriptadas con bcrypt, nunca en texto plano</li>
       <li>La comunicación entre la app y el servidor usa HTTPS con tokens de sesión (JWT)</li>
-      <li>Las cuentas de usuario se almacenan en una base de datos PostgreSQL con conexión cifrada</li>
+      <li>Las cuentas de usuario y los datos del aula se almacenan en una base de datos PostgreSQL con conexión cifrada y reglas de acceso por usuario</li>
       <li>Los datos de uso y preferencias locales se guardan en tu propio dispositivo</li>
-      <li>Los nombres de alumnos, la asistencia, el cotejo y la valoración se almacenan únicamente en tu dispositivo y nunca se envían a nuestro servidor</li>
       <li>No almacenamos, vinculados a tu cuenta, el contenido de los planes, evaluaciones, proyectos o documentos que generás — ese contenido es tuyo</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Datos de tus alumnos</h2>
+    <p>Los datos del aula que cargás (cursos, nombres de alumnos, asistencia, lista de cotejo y puntajes de valoración) se guardan en tu dispositivo y, además, una copia en nuestro servidor vinculada a tu cuenta. Esa copia existe únicamente para que puedas ver y seguir trabajando con los mismos datos desde otro dispositivo.</p>
+    <ul>
+      <li>Solo vos podés acceder a estos datos, iniciando sesión con tu cuenta</li>
+      <li>No se usan para generar contenido con inteligencia artificial ni se envían a Google Gemini</li>
+      <li>No se venden, no se comparten con terceros y no se usan con fines publicitarios</li>
+      <li>Se eliminan de nuestro servidor cuando eliminás tu cuenta</li>
+    </ul>
+    <p>Te recomendamos cargar solo los datos necesarios para tu registro escolar (nombre y apellido de cada alumno).</p>
   </section>
 
   <section>
@@ -146,7 +159,7 @@
       <li>Grado, materia, capacidad y contenido del plan, evaluación, proyecto o documento solicitado</li>
       <li>Las indicaciones adicionales que escribas en los campos de texto libre</li>
     </ul>
-    <p>No enviamos tu nombre, tu correo electrónico ni ningún otro dato que te identifique directamente. El uso de este servicio está sujeto a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>. Recomendamos no escribir datos personales de tus alumnos en los campos de texto libre.</p>
+    <p>No enviamos tu nombre, tu correo electrónico, los datos de tus alumnos ni ningún otro dato que te identifique directamente. El uso de este servicio está sujeto a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>. Recomendamos no escribir datos personales de tus alumnos en los campos de texto libre.</p>
   </section>
 
   <section>
@@ -176,7 +189,7 @@
     <ul>
       <li><strong>Google</strong> — generación de contenido con inteligencia artificial, almacenamiento de programas curriculares y material de apoyo en Google Cloud Storage, publicidad mediante AdMob, y procesamiento de la suscripción Premium mediante Google Play</li>
       <li><strong>Railway</strong> — proveedor de infraestructura de nuestro servidor</li>
-      <li><strong>Base de datos PostgreSQL (Supabase)</strong> — almacenamiento de las cuentas de usuario</li>
+      <li><strong>Base de datos PostgreSQL (Supabase)</strong> — almacenamiento de las cuentas de usuario y de los datos del aula sincronizados</li>
       <li><strong>Expo</strong> — plataforma de distribución de actualizaciones de la app</li>
       <li>Autoridades competentes, si la ley lo requiere</li>
     </ul>
@@ -195,7 +208,7 @@
 
   <section>
     <h2>Retención de datos</h2>
-    <p>Conservamos los datos de tu cuenta mientras esté activa. Al solicitar la eliminación, tu cuenta y tus datos personales (correo, nombre, institución, estado de plan) se eliminan de nuestra base de datos de forma permanente, en un plazo de hasta 30 días. Los materiales informativos anónimos del caché compartido, al no contener datos personales, no se eliminan junto con tu cuenta.</p>
+    <p>Conservamos los datos de tu cuenta mientras esté activa. Al solicitar la eliminación, tu cuenta, tus datos personales (correo, nombre, institución, estado de plan) y los datos del aula sincronizados (cursos, alumnos, asistencia, cotejo y valoración) se eliminan de nuestra base de datos de forma permanente, en un plazo de hasta 30 días. Los materiales informativos anónimos del caché compartido, al no contener datos personales, no se eliminan junto con tu cuenta.</p>
   </section>
 
   <section>
@@ -203,7 +216,7 @@
     <p>Para proteger tu cuenta:</p>
     <ul>
       <li>Usá una contraseña segura y no la compartas</li>
-      <li>- No compartas tu cuenta con otros docentes — cada usuario debe tener su propia cuenta. Al iniciar sesión en un dispositivo, la sesión del anterior se cierra automáticamente</li>
+      <li>No compartas tu cuenta con otros docentes — cada usuario debe tener su propia cuenta. Al iniciar sesión en un dispositivo, la sesión del anterior se cierra automáticamente</li>
       <li>Si detectamos uso inusual, podemos requerir que vuelvas a autenticarte</li>
     </ul>
   </section>
